@@ -103,15 +103,22 @@ HashTable  → manual hashing + collision handling
 
 ```bash
 # Clone the repo
-git clone https://github.com/lucaspnbrs/go-journey.git
-cd go-journey
+git clone https://github.com/lucaspnbrs/fundamentals-go.git
+cd fundamentals-go
 
 # Run any example
-cd 03-structs/defining-structs
-go run main.go
+cd 10-maps
+go run maps.go
 
 # Run tests
 go test ./...
+```
+```
+#Run exec version
+go build
+
+# install dependency module
+go mod init
 ```
 
 > Requires **Go 1.21+**. Install at [go.dev/dl](https://go.dev/dl)
@@ -122,10 +129,10 @@ go test ./...
 
 Coming from TypeScript and Java, Go feels like a disciplined reset:
 
-- **No inheritance** — composition only
+- **No inheritance** — composition only, apply inheritance in structs
 - **No exceptions** — errors are explicit return values
 - **No magic** — what you write is what runs
-- **Built-in concurrency** — goroutines are first-class
+- **Built-in concurrency** — goroutines are first-class / apply in processors and threads
 - **Compiled and fast** — close to C-level performance with high-level ergonomics
 
 For systems that need to scale — and stay readable — Go is the right tool.
