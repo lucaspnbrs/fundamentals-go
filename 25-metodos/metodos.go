@@ -6,8 +6,10 @@ type user struct {
 	name string
 	age uint8
 }
+
 //Reference to struct, for simulate a method of OOP
 //Go not have OOP, but have support to paradigm 
+
 func (u user) salvar(){
 	fmt.Println("Account created with success!", u.name)
 }
